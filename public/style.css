@@ -1,0 +1,78 @@
+html {
+    scroll-behavior: smooth;
+  }
+#title-txt{
+    height:150px;
+}
+  
+  
+  
+#photos a:hover{
+    opacity: 0.5;
+}
+form p{
+    width: 50vw;
+    
+}
+form input{
+    height:20px;
+}
+a{
+    text-decoration: none;
+}
+#send-mssg, #download-resume{
+    color:white;
+    animation-name: buttonhover;
+    animation-duration: 6s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes buttonhover{
+    0%{background-color:#5856d6 ;}
+    20%{background-color:#34AADC ;}
+    40%{background-color:#4cd964 ;}
+    60%{background-color: #ff2d55;}
+    80%{background-color:#ff3b30 ;}
+    100%{background-color:#ffcc00 ;}
+}
+.w3-ios-dark-blue
+{color:#fff;background-color:#5856d6}
+.w3-ios-deep-blue
+{color:#fff;background-color:#007AFF}
+.w3-ios-blue
+{color:#fff;background-color:#34AADC}
+.w3-ios-light-blue
+{color:#fff;background-color:#5AC8FA}
+.w3-ios-green
+{color:#000;background-color:#4cd964}
+.w3-ios-pink
+{color:#fff;background-color:#ff2d55}
+.w3-ios-red
+{color:#fff;background-color:#ff3b30}
+.w3-ios-orange
+{color:#fff;background-color:#ff9500}
+.w3-ios-yellow
+{color:#000;background-color:#ffcc00}
+.w3-ios-grey
+{color:#fff;background-color:#8e8e93}
+.w3-ios-light-grey
+{color:#000;background-color:#ceced2}
+.w3-ios-background
+{color:#000;background-color:#efeff4}
+
+@media only screen and (max-width: 600px){
+    header img{
+        width:992px;
+        height:1108px;
+    }
+    form p{
+        width: 80vw;
+        
+    }
+    #title-txt{
+        height:300px;
+    }
+   
+}
