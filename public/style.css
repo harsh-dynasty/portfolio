@@ -76,3 +76,29 @@ a{
     }
    
 }
+
+.outer{
+    width:100%;
+    
+    height:28px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+.inner{
+    
+    height:100%;
+    animation-play-state: paused;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    
+}
+#bar1{animation-name:bar1; width:85%;background-color:#5856d6 ;}  @keyframes bar1{from{width:0%;} to{width:85%;}}
+#bar2{animation-name:bar2; width:70%;background-color: #ff2d55;}  @keyframes bar2{from{width:0%;} to{width:70%;}}
+#bar3{animation-name:bar3; width:71%;background-color: #4cd964;}  @keyframes bar3{from{width:0%;} to{width:71%;}}
+#bar4{animation-name:bar4; width:65%;background-color:#ff9500 ;}  @keyframes bar4{from{width:0%;} to{width:65%;}}
+#bar5{animation-name:bar5; width:65%;background-color:#ff9500;}  @keyframes bar5{from{width:0%;} to{width:65%;}}
+
+#bar6{animation-name:bar6; width:80%;background-color:#5856d6 ;}  @keyframes bar6{from{width:0%;} to{width:80%;}}
+#bar7{animation-name:bar7; width:85%;background-color: #4cd964;}  @keyframes bar7{from{width:0%;} to{width:85%;}}
+#bar8{animation-name:bar8; width:70%;background-color:#007AFF ;}  @keyframes bar8{from{width:0%;} to{width:70%;}}
+#bar9{animation-name:bar9; width:60%;background-color: #ff2d55;}  @keyframes bar9{from{width:0%;} to{width:60%;}}
