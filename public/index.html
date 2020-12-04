@@ -6,7 +6,12 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <link  rel="stylesheet" href="style.css">
+
+
+<meta name="google-signin-client_id" content="886301706171-mkuaseqt1qsusmlm7luhhbt7slg8mbni.apps.googleusercontent.com">
+
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif; }
 .w3-row-padding img {margin-bottom: 12px}
@@ -55,6 +60,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif; }
 <!-- Page Content -->
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
+<!-- google sign-in button -->
+<div class="g-signin2" data-onsuccess="onSignIn" id="google-signin-btn"></div>
+
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
     <div class="w3-jumbo" id="title-txt"><span id="iam">I'm</span> <span style="color:#5856d6">H</span><span style="color:#ff2d55">a</span><span style="color:#ffcc00">r</span><span style="color:#4cd964">s</span><span style="color:#ff9500">h </span><span style="color:#007AFF">S</span><span style="color:#4cd964">o</span><span style="color:#ff2d55">n</span><span style="color:#ffcc00">i</span><span>.</span></div>
     <p>Full stack web developer.</p>
@@ -64,50 +72,50 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif; }
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">My work</h2>
+    <h2 class="w3-text-light-grey" id="myWork">My work</h2>
     <hr style="width:200px" class="w3-opacity">
     <p>Hello i'm Harsh Soni. I develop websites. I handle both frontend and backend part of the website. I can help you in making a brand new fresh, simple and cool looking website. I can add different functionalities and features as per client's requirement. Please go and look up my some of the projects which i have made...
     </p>
     <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
     <hr style="width:200px" class="w3-opacity">
     <p class="w3-wide">Client-side Javascript</p>
-    <div class="w3-white">
-      <div class="w3-ios-dark-blue" style="height:28px;width:85%"></div>
+    <div class="outer"  >
+      <div class="inner" id="bar1"></div>
     </div>
     <p class="w3-wide">Html and CSS</p>
-    <div class="w3-white">
-      <div class="w3-ios-green" style="height:28px;width:70%"></div>
+    <div class="outer">
+      <div class="inner"id="bar2"></div>
     </div>
     <p class="w3-wide">Node JS(Server-side)</p>
-    <div class="w3-white">
-      <div class="w3-ios-pink" style="height:28px;width:71%"></div>
+    <div class="outer">
+      <div class="inner" id="bar3"></div>
     </div>
     <p class="w3-wide">Databases (NeDB,MySQL, Server-side)</p>
-    <div class="w3-white">
-      <div class="w3-ios-orange" style="height:28px;width:65%"></div>
+    <div class="outer">
+      <div class="inner"  id="bar4"></div>
     </div>
     <p class="w3-wide">APIs (Google APIs)</p>
-    <div class="w3-white">
-      <div class="w3-ios-orange" style="height:28px;width:65%"></div>
+    <div class="outer">
+      <div class="inner"  id="bar5"></div>
     </div>
     <br>
     <h3 class="w3-padding-16 w3-text-light-grey">My Other Skills</h3>
     <hr style="width:200px" class="w3-opacity">
     <p class="w3-wide">C/C++</p>
-    <div class="w3-white">
-      <div class="w3-ios-red" style="height:28px;width:80%"></div>
+    <div class="outer">
+      <div class="inner" id="bar6"></div>
     </div>
     <p class="w3-wide">Object Oriented Programming In Javascript and C++</p>
-    <div class="w3-white">
-      <div class="w3-ios-dark-blue" style="height:28px;width:85%"></div>
+    <div class="outer">
+      <div class="inner"  id="bar7"></div>
     </div>
     <p class="w3-wide">Data structures and Algorithm</p>
-    <div class="w3-white">
-      <div class="w3-ios-yellow" style="height:28px;width:70%"></div>
+    <div class="outer">
+      <div class="inner"  id="bar8"></div>
     </div>
     <p class="w3-wide">Competitive Programming</p>
-    <div class="w3-white">
-      <div class="w3-ios-deep-blue" style="height:28px;width:60%"></div>
+    <div class="outer">
+      <div class="inner" id="bar9"></div>
     </div>
     
     <br>
@@ -178,10 +186,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif; }
         </button><br/>
         <span id="alert" style="color:#ff2d55"></span>
       </p>
+     
+     
     </div>
   <!-- End Contact Section -->
+   <div class='pm-button'><a href='https://www.payumoney.com/paybypayumoney/#/55453622F09F524E71A6B40FF158DE44'><img src='https://www.payumoney.com/media/images/payby_payumoney/new_buttons/21.png' /></a></div> 
   </div>
-  
+ 
     <!-- Footer -->
   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
     
@@ -196,6 +207,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif; }
 <!-- END PAGE CONTENT -->
 </div>
 <script src="./index.js"></script>
-
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 </body>
 </html>
